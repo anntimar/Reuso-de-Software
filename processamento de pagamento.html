@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style type="text/css">
+        /* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e91e63;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+    color: #e91e63;
+}
+
+.logo {
+    color: #e91e63;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #e91e63;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+input {
+    height: 30px;
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 1rem;
+}
+   
+
+    </style>
+    <meta charset="UTF-8">
+    <title>Processamento de Pagamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Catálogo</a>
+            <a href="#">Carrinho</a>
+            <a href="#">Minha Conta</a>
+        </nav>
+        <a href="#" class="logo"><img src="logo.png.png" alt="some text" width=100 height=100></a>
+    </header>
+
+    <main>
+        <h1>Processamento de Pagamento</h1>
+        <form>
+            <label for="card_number">Número do Cartão</label>
+            <input type="text" id="card_number" name="card_number" required>
+            
+            <label for="card_holder">Nome do Titular</label>
+            <input type="text" id="card_holder" name="card_holder" required>
+
+            <label for="expiration_date">Data de Validade</label>
+            <input type="month" id="expiration_date" name="expiration_date" required>
+
+            <label for="cvv">Código de Segurança</label>
+            <input type="password" id="cvv" name="cvv" required>
+
+            <button type="submit">Finalizar Compra</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Mini Boutique</p>
+    </footer>
+</body>
+</html>

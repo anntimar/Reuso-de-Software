@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <style type="text/css">
+        body {
+	font-family: 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+	color: #333;
+}
+
+header {
+	background-color: #e91e63;
+	padding: 20px;
+	text-align: center;
+}
+
+nav {
+	background-color: #fff;
+	padding: 20px;
+	text-align: center;
+	border-bottom: 1px solid #e91e63;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+
+nav ul li {
+	margin: 0 10px;
+}
+
+nav ul li a {
+	color: #333;
+	text-decoration: none;
+	font-size: 18px;
+	padding: 10px;
+	border: 1px solid #e91e63;
+	border-radius: 10px;
+	transition: all .3s;
+}
+
+nav ul li a:hover {
+	background-color: #e91e63;
+	color: #fff;
+}
+
+main {
+	padding: 20px;
+}
+
+h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 10px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+thead th {
+	background-color: #FFC0
+}
+
+    </style>
+	<meta charset="UTF-8">
+	<title>Administração - Mini Boutique</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Administração - Mini Boutique</h1>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="#">Cadastrar produto</a></li>
+			<li><a href="#">Visualizar produtos</a></li>
+			<li><a href="#">Pedidos</a></li>
+			<li><a href="#">Configurações</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<h2>Últimos pedidos</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Número do pedido</th>
+					<th>Nome do cliente</th>
+					<th>Data do pedido</th>
+					<th>Valor total</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>001</td>
+					<td>Ana Silva</td>
+					<td>01/05/2023</td>
+					<td>R$ 350,00</td>
+				</tr>
+				<tr>
+					<td>002</td>
+					<td>João Santos</td>
+					<td>29/04/2023</td>
+					<td>R$ 150,00</td>
+				</tr>
+				<tr>
+						<td>003</td>
+						<td>Carla Oliveira</td>
+						<td>28/04/2023</td>
+						<td>R$ 450,00</td>
+				</tr>
+			</tbody>
+		</table>
+	</main>
+
+	<footer>
+		<p>Mini Boutique &copy; 2023</p>
+	</footer>
+</body>
+</html>

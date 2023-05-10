@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">* {
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+      
+      body {
+        margin: 0;
+      }
+      
+      header {
+        background-color: #fd4b86;
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: normal;
+      }
+      
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+      
+      nav ul li {
+        margin: 0 10px;
+      }
+      
+      nav ul li a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+      }
+      
+      main {
+        padding: 0px;
+      }
+      
+      section {
+        margin-bottom: 0px;
+      }
+      
+      section h2 {
+        margin-bottom: 0px;
+      }
+      
+      .product {
+        border: 1px solid #d37aab;
+        padding: 10px;
+        margin-right: 20px;
+        width: 200px;
+        float: left;
+        text-align: center;
+      }
+      
+      .product img {
+        width: 100%;
+        height: auto;
+      }
+      
+      .product h3 {
+        margin-top: 10px;
+      } 
+      nav {
+ 
+  border-bottom: 0px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 0 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav ul li a:hover {
+  color: #ff3f6c;
+  border-bottom: 2px solid #ff3f6c;
+  transition: all 0.3s ease;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 0;
+    height: auto;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    margin: 0;
+    padding: 10px 0;
+  }
+
+  nav ul li {
+    margin: 0;
+  }
+
+  nav ul li a {
+    color: #333;
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+  }
+
+  .active ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f8f8;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+  }
+
+  .active ul li {
+    margin: 15px 0;
+  }
+}
+footer {
+  background-color: #f8f8f8;
+  padding: 20px 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-menu ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-menu ul li {
+  margin: 0 15px;
+}
+
+.footer-menu ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-menu ul li a:hover {
+  color: #ff3f6c;
+  transition: all 0.3s ease;
+}
+footer {
+  background-color: #f5f5f5;
+  padding: 40px 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.coluna {
+  flex: 1;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.coluna:last-child {
+  margin-right: 0;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+form {
+  margin-top: 10px;
+  display: flex;
+}
+
+input[type="email"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 100%;
+}
+
+button[type="submit"] {
+  background-color: #faf8f8;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.search-box {
+  background-color: #f7f7f7;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+  margin-right: 10px;
+}
+
+.search-button {
+  background-color: #f0c040;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fd4b86;
+  box-shadow: 0 4px 6px rgba(0,0,0,.1);
+}
+
+nav {
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav li:first-child {
+  margin-left: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.search-bar button[type="submit"] {
+  padding: 10px 20px;
+  border: 5px;
+  background-color: #333;
+  color: #FFF;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+      </style>
+
+<meta charset="UTF-8">
+<title>Mini Boutique</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>     
+      
+</div>
+
+  <nav>
+    <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Básicos</a></li>
+        <li><a href="#">Feminino</a></li>
+        <li><a href="#">Infantil</a></li>
+        <li><a href="#">Beleza</a></li>
+        <li><a href="#">Acessórios e Relógios</a></li>
+        <li><a href="#">Calçados</a></li>
+        <li><a href="#">Jeans</a></li>
+        <li><a href="#">Esportivo</a></li>
+        <li><a href="#">Moda Íntima</a></li>
+        <li><a href="#">Carrinho de Compras</a></li>
+        <li><a href="#">Minha Conta</a></li>
+      
+    </ul>
+  </nav>
+  <div class="search-container">
+    <form action="/search">
+      <input type="text" placeholder="Search..." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  <h1><img src="logo.png.png" alt="some text" width=200 height=200></h1>
+</header>
+<main>
+  <section id="featured">
+    <h2>Produtos em Destaques</h2>
+    <br>
+    <div class="product">
+      <img src="16620184699e31b894beadee2a8751ad5948c396ab.webp" alt="Bolsa Quadrada Mini Geométrico">
+      <h3>Bolsa Quadrada Mini Geométrico</h3>
+      <p>R$ 99,99</p>
+      <button class="add-to-cart" data-id="1">Adicionar ao carrinho</button>
+    </div>
+    <div class="product">
+      <img src="1656663578f38f16e9142fe7bf6c274def4ec6efcb.webp" alt="Vestido Cami Torção Frontal">
+      <h3>Vestido Cami Torção Frontal</h3>
+      <p>R$ 149,99</p>
+      <button class="add-to-cart" data-id="2">Adicionar ao carrinho</button>
+    </div>
+  </section>
+  <section id="recent">
+    
+    <div class="product">
+      <img src="16819617156326ca960277287e25096eff0dccab91.webp" alt="Blazer & Calças Sólido">
+      <h3>Blazer & Calças Sólido</h3>
+      <p>R$ 79,99</p>
+      <button class="add-to-cart" data-id="3">Adicionar ao carrinho</button>
+    </div>
+    <div class="product">
+      <img src="1682399008562f9177d28e5237fd472cf3050168eb.webp" alt="Top Cami Estampa Tropical">
+      <h3>Top Cami Estampa Tropical</h3>
+      <p>R$ 49,99</p>
+      <button class="add-to-cart" data-id="4">Adicionar ao carrinho</button>
+    </div>
+    <div class="product">
+        <img src="1673234514e7c9e54697404a82cb5831e817343541_thumbnail_600x.webp" alt=" Frenchy Camiseta Cortada Torção">
+        <h3> Frenchy Camiseta Cortada Torção</h3>
+        <p>R$ 39,99</p>
+        <button class="add-to-cart" data-id="4">Adicionar ao carrinho</button>
+      </div>
+      <div class="product">
+        <img src="Imagem do WhatsApp de 2023-05-09 à(s) 19.22.44.jpg" alt="Top Cami Estampa Tropical">
+        <h3>Biquini Floral Cintura Alta</h3>
+        <p>R$ 89,99</p>
+        <button class="add-to-cart" data-id="4">Adicionar ao carrinho</button>
+      </div>
+      <div class="product">
+        <img src="1682399008562f9177d28e5237fd472cf3050168eb.webp" alt="Top Cami Estampa Tropical">
+        <h3>Top Cami Estampa Tropical</h3>
+        <p>R$ 49,99</p>
+        <button class="add-to-cart" data-id="4">Adicionar ao carrinho</button>
+      </div>
+      <div class="product">
+        <img src="1682399008562f9177d28e5237fd472cf3050168eb.webp" alt="Top Cami Estampa Tropical">
+        <h3>Top Cami Estampa Tropical</h3>
+        <p>R$ 49,99</p>
+        <button class="add-to-cart" data-id="4">Adicionar ao carrinho</button>
+      </div>
+      <div class="product">
+        <img src="1682399008562f9177d28e5237fd472cf3050168eb.webp" alt="Top Cami Estampa Tropical">
+        <h3>Top Cami Estampa Tropical</h3>
+        <p>R$ 49,99</p>
+        <button class="add-to-cart" data-id="4">Adicionar ao carrinho</button>
+      </div>
+      <div class="product">
+        <img src="1682399008562f9177d28e5237fd472cf3050168eb.webp" alt="Top Cami Estampa Tropical">
+        <h3>Top Cami Estampa Tropical</h3>
+        <p>R$ 49,99</p>
+        <button class="add-to-cart" data-id="4">Adicionar ao carrinho</button>
+      </div>
+      <div class="product">
+        <img src="1682399008562f9177d28e5237fd472cf3050168eb.webp" alt="Top Cami Estampa Tropical">
+        <h3>Top Cami Estampa Tropical</h3>
+        <p>R$ 49,99</p>
+        <button class="add-to-cart" data-id="4">Adicionar ao carrinho</button>
+      </div>
+      <div class="product">
+        <img src="1682399008562f9177d28e5237fd472cf3050168eb.webp" alt="Top Cami Estampa Tropical">
+        <h3>Top Cami Estampa Tropical</h3>
+        <p>R$ 49,99</p>
+        <button class="add-to-cart" data-id="4">Adicionar ao carrinho</button>
+      </div>
+      <div class="product">
+  </section>
+</main>
+    <footer class="rodape">
+        <div class="container">
+          <div class="coluna">
+            <h4>Atendimento ao Cliente</h4>
+            <ul>
+              <li>Perguntas Frequentes</li>
+              <li>Política de Privacidade</li>
+              <li>Central de Privacidade</li>
+              <li>Termo de Uso</li>
+              <li>Trocas e Devoluções</li>
+              <li>Acompanhe seu Pedido</li>
+              <li>Tire sua Dúvida</li>
+              <li>Fale Conosco</li>
+            </ul>
+          </div>
+          <div class="coluna">
+            <h4>Redes Sociais</h4>
+            <ul>
+              <li>Facebook</li>
+              <li>Instagram</li>
+              <li>Twitter</li>
+            </ul>
+          </div>
+          <div class="coluna">
+            <h4>Informações</h4>
+            <ul>
+              <li>Sobre Nós</li>
+              <li>Política de Entrega</li>
+              <li>Política de Pagamento</li>
+              <li>Política de Troca e Devolução</li>
+              <li>Trabalhe Conosco</li>
+            </ul>
+          </div>
+          <div class="coluna">
+            <h4>Newsletter</h4>
+            <p>Cadastre-se para receber nossas novidades e promoções.</p>
+            <form>
+              <input type="email" placeholder="Seu melhor e-mail">
+              <button type="submit">Cadastrar</button>
+            </form>
+          </div>
+        </div>
+</footer>
+<script>
+  const cartButton = document.getElementById('cart-button');
+  const cartSection = document.getElementById('cart');
+  const cartItems = document.getElementById('cart-items');
+  const cartTotal = document.getElementById('cart-total');
+  const checkoutButton = document.getElementById('checkout-button');
+  const addToCartButtons = document.getElementsByClassName('add-to-cart');
+  let cart = [];
+
+  // Mostra ou esconde a seção do carrinho de compras
+  function oggleCart() {
+cartSection.classList.toggle('hidden');
+}
+  // Adiciona um item ao carrinho de compras
+  function addToCart(id, name, price) {
+    // Verifica se o item já está no carrinho
+    const existingItem = cart.find(item => item.id === id);
+    if (existingItem) {
+      existingItem.quantity++;
+    } else {
+      cart.push({
+        id,
+        name,
+        price,
+        quantity: 1
+      });
+    }
+    renderCart();
+  }
+
+  // Remove um item do carrinho de compras
+  function removeFromCart(id) {
+    const itemIndex = cart.findIndex(item => item.id === id);
+    if (itemIndex !== -1) {
+      const item = cart[itemIndex];
+      if (item.quantity === 1) {
+        cart.splice(itemIndex, 1);
+      } else {
+        item.quantity--;
+      }
+      renderCart();
+    }
+  }
+
+  // Renderiza a lista de itens do carrinho de compras
+  function renderCart() {
+    cartItems.innerHTML = '';
+    cart.forEach(item => {
+      const li = document.createElement('li');
+      li.innerText = `${item.name} - R$ ${item.price} x ${item.quantity}`;
+      const removeButton = document.createElement('button');
+      removeButton.innerText = 'Remover';
+      removeButton.addEventListener('click', () => removeFromCart(item.id));
+      li.appendChild(removeButton);
+      cartItems.appendChild(li);
+    });
+    const total = cart.reduce((acc, item) => acc + (item.price * item.quantity), 0);
+    cartTotal.innerText = total.toFixed(2);
+  }
+
+  // Adiciona os eventos aos botões
+  cartButton.addEventListener('click', toggleCart);
+  checkoutButton.addEventListener('click', () => {
+    alert('Compra finalizada!');
+    cart = [];
+    renderCart();
+    toggleCart();
+  });
+  Array.from(addToCartButtons).forEach(button => {
+    const id = button.getAttribute('data-id');
+    const name = button.parentElement.querySelector('h3').innerText;
+    const price = parseFloat(button.parentElement.querySelector('p').innerText.replace('R$ ', ''));
+    button.addEventListener('click', () => addToCart(id, name, price));
+  });
+</script>
+</body>
+</html>
